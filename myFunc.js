@@ -32,6 +32,6 @@ function getDateStr(){
 // numをcount個含んだ配列を返す
 function getSameNumArray(num, count){
     const res = []
-    for (i = 0; i < count; i++) res.push(num)
+    for (let i = 0; i < count; i++) res.push(num)
     return res
 }
