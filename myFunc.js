@@ -35,3 +35,9 @@ function getSameNumArray(num, count){
     for (let i = 0; i < count; i++) res.push(num)
     return res
 }
+
+// startから始まってcount個の連続した整数の配列を返す
+// https://qiita.com/suin/items/1b39ce57dd660f12f34b
+function getSerialArray(start, count){
+    return [...Array(count)].map((_, i) => i + start)
+}
