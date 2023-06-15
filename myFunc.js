@@ -41,3 +41,17 @@ function getSameNumArray(num, count){
 function getSerialArray(start, count){
     return [...Array(count)].map((_, i) => i + start)
 }
+
+// 数値の配列のなかで最大値を返す
+function max_of_array(arr){
+    return arr.reduce(function(a, b) {
+        return Math.max(a, b);
+    });
+}
+
+// 数値の配列のなかで最小値を返す
+function min_of_array(arr){
+    return arr.reduce(function(a, b) {
+        return Math.min(a, b);
+    });
+}
